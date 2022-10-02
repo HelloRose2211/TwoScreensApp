@@ -63,7 +63,7 @@ extension LoginViewController {
 //MARK: UITextFieldDelegate
 extension LoginViewController: UITextFieldDelegate {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        suoer.touchesBegan(touches, with: event)
+        super.touchesBegan(touches, with: event)
         view.endEditing(true)
     }
     
