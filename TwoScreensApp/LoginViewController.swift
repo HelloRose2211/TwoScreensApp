@@ -38,7 +38,7 @@ class LoginViewController: UIViewController {
     @IBAction func forgotRegisterData(_ sender: UIButton) {
         sender.tag == 0
         ? showAlert(title: "Oops!", message: "Your name is \(user) 😉")
-        ? showAlert(title: "Oops!", message: "Your password is \(password) 😉")
+        : showAlert(title: "Oops!", message: "Your password is \(password) 😉")
     }
     
     @IBAction func unwindSegue(_ sender: UIStoryboardSegue) {
