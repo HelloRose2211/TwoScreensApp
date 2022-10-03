@@ -11,7 +11,7 @@
         <!--Login Screen-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" userLabel="Login Screen" customClass="ViewController" customModule="TwoScreensApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" userLabel="Login Screen" customClass="LoginViewController" customModule="TwoScreensApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -22,7 +22,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="4ex-pv-R5x">
                                         <rect key="frame" x="0.0" y="0.0" width="315" height="93"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="User Name" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Ok-Ql-Oyh">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Ok-Ql-Oyh">
                                                 <rect key="frame" x="0.0" y="0.0" width="315" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocorrectionType="no"/>
@@ -30,7 +30,7 @@
                                                     <outlet property="delegate" destination="BYZ-38-t0r" id="5HP-HC-EF9"/>
                                                 </connections>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Password" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rkw-un-ysB">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rkw-un-ysB">
                                                 <rect key="frame" x="0.0" y="59" width="315" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -87,7 +87,7 @@
                     <connections>
                         <outlet property="passwordTF" destination="rkw-un-ysB" id="2Xn-Fz-aZt"/>
                         <outlet property="userNameTF" destination="7Ok-Ql-Oyh" id="Xac-NQ-k1N"/>
-                        <segue destination="jiw-0B-wkX" kind="presentation" id="ZsL-M8-bg5"/>
+                        <segue destination="jiw-0B-wkX" kind="presentation" identifier="showWelcomeVC" id="ZsL-M8-bg5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
