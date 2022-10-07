@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C6503C4228F0385B00ACE5F7 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6503C4128F0385B00ACE5F7 /* User.swift */; };
+		C6503C4428F03F6200ACE5F7 /* UserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6503C4328F03F6200ACE5F7 /* UserInfoViewController.swift */; };
 		C68F4776284B1DE200C598BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68F4775284B1DE200C598BD /* AppDelegate.swift */; };
 		C68F4778284B1DE200C598BD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68F4777284B1DE200C598BD /* SceneDelegate.swift */; };
 		C68F477A284B1DE200C598BD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68F4779284B1DE200C598BD /* LoginViewController.swift */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		C6503C4128F0385B00ACE5F7 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		C6503C4328F03F6200ACE5F7 /* UserInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoViewController.swift; sourceTree = "<group>"; };
 		C68F4772284B1DE200C598BD /* TwoScreensApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwoScreensApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C68F4775284B1DE200C598BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C68F4777284B1DE200C598BD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +47,7 @@
 			isa = PBXGroup;
 			children = (
 				C68F477B284B1DE200C598BD /* Main.storyboard */,
+				C6503C4328F03F6200ACE5F7 /* UserInfoViewController.swift */,
 				C68F4780284B1DE200C598BD /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
@@ -185,6 +188,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C68F477A284B1DE200C598BD /* LoginViewController.swift in Sources */,
+				C6503C4428F03F6200ACE5F7 /* UserInfoViewController.swift in Sources */,
 				C68F478A284B2A3700C598BD /* WelcomeViewController.swift in Sources */,
 				C68F4776284B1DE200C598BD /* AppDelegate.swift in Sources */,
 				C6503C4228F0385B00ACE5F7 /* User.swift in Sources */,
