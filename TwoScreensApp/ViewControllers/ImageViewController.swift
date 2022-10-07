@@ -8,22 +8,17 @@
 import UIKit
 
 class ImageViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+    
+    @IBOutlet weak var imageView: UIImageView! {
+        didSet {
+            imageView.layer.cornerRadius = imageView.frame.height / 2
+        }
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    var user: User!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        imageView.image = UIImage(named: user.person.image)
     }
-    */
-
 }
