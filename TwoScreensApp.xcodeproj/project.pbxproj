@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C6503C4228F0385B00ACE5F7 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6503C4128F0385B00ACE5F7 /* User.swift */; };
 		C68F4776284B1DE200C598BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68F4775284B1DE200C598BD /* AppDelegate.swift */; };
 		C68F4778284B1DE200C598BD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68F4777284B1DE200C598BD /* SceneDelegate.swift */; };
 		C68F477A284B1DE200C598BD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68F4779284B1DE200C598BD /* LoginViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C6503C4128F0385B00ACE5F7 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		C68F4772284B1DE200C598BD /* TwoScreensApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwoScreensApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C68F4775284B1DE200C598BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C68F4777284B1DE200C598BD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +41,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C6503C3C28F0359400ACE5F7 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				C68F477B284B1DE200C598BD /* Main.storyboard */,
+				C68F4780284B1DE200C598BD /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		C6503C3D28F035A600ACE5F7 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C68F4779284B1DE200C598BD /* LoginViewController.swift */,
+				C68F4789284B2A3700C598BD /* WelcomeViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		C6503C3E28F035C800ACE5F7 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				C68F4775284B1DE200C598BD /* AppDelegate.swift */,
+				C68F4777284B1DE200C598BD /* SceneDelegate.swift */,
+				C68F4783284B1DE200C598BD /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		C6503C3F28F035E000ACE5F7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C68F477E284B1DE200C598BD /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C6503C4028F036E400ACE5F7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C6503C4128F0385B00ACE5F7 /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		C68F4769284B1DE200C598BD = {
 			isa = PBXGroup;
 			children = (
@@ -58,14 +104,11 @@
 		C68F4774284B1DE200C598BD /* TwoScreensApp */ = {
 			isa = PBXGroup;
 			children = (
-				C68F4775284B1DE200C598BD /* AppDelegate.swift */,
-				C68F4777284B1DE200C598BD /* SceneDelegate.swift */,
-				C68F4779284B1DE200C598BD /* LoginViewController.swift */,
-				C68F4789284B2A3700C598BD /* WelcomeViewController.swift */,
-				C68F477B284B1DE200C598BD /* Main.storyboard */,
-				C68F477E284B1DE200C598BD /* Assets.xcassets */,
-				C68F4780284B1DE200C598BD /* LaunchScreen.storyboard */,
-				C68F4783284B1DE200C598BD /* Info.plist */,
+				C6503C3E28F035C800ACE5F7 /* App */,
+				C6503C3D28F035A600ACE5F7 /* ViewControllers */,
+				C6503C4028F036E400ACE5F7 /* Models */,
+				C6503C3C28F0359400ACE5F7 /* Storyboards */,
+				C6503C3F28F035E000ACE5F7 /* Resources */,
 			);
 			path = TwoScreensApp;
 			sourceTree = "<group>";
@@ -144,6 +187,7 @@
 				C68F477A284B1DE200C598BD /* LoginViewController.swift in Sources */,
 				C68F478A284B2A3700C598BD /* WelcomeViewController.swift in Sources */,
 				C68F4776284B1DE200C598BD /* AppDelegate.swift in Sources */,
+				C6503C4228F0385B00ACE5F7 /* User.swift in Sources */,
 				C68F4778284B1DE200C598BD /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,7 +337,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 69V4U5XTH4;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TwoScreensApp/Info.plist;
+				INFOPLIST_FILE = TwoScreensApp/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -322,7 +366,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 69V4U5XTH4;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TwoScreensApp/Info.plist;
+				INFOPLIST_FILE = TwoScreensApp/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
