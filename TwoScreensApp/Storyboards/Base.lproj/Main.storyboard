@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Login Screen-->
+        <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" userLabel="Login Screen" customClass="LoginViewController" customModule="TwoScreensApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" userLabel="Login View Controller" customClass="LoginViewController" customModule="TwoScreensApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -89,7 +89,7 @@
                         <outlet property="passwordTF" destination="rkw-un-ysB" id="2Xn-Fz-aZt"/>
                         <outlet property="userNameTF" destination="7Ok-Ql-Oyh" id="Xac-NQ-k1N"/>
                         <segue destination="TYn-FR-Hmy" kind="presentation" identifier="showWelcomeVC" id="ZsL-M8-bg5"/>
-                        <segue destination="TYn-FR-Hmy" kind="presentation" modalPresentationStyle="fullScreen" id="dwp-TT-b9H"/>
+                        <segue destination="TYn-FR-Hmy" kind="presentation" identifier="showWelcomeVC" modalPresentationStyle="fullScreen" id="dwp-TT-b9H"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -243,7 +243,7 @@
                     <nil name="viewControllers"/>
                     <connections>
                         <segue destination="42T-I5-yRS" kind="relationship" relationship="rootViewController" id="juw-35-uMt"/>
-                        <segue destination="15y-9T-0KX" kind="presentation" id="c4y-qt-vqM"/>
+                        <segue destination="15y-9T-0KX" kind="presentation" identifier="showUserInfoVC" id="c4y-qt-vqM"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pZY-3g-56p" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
