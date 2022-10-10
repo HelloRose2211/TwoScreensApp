@@ -1,6 +1,7 @@
 {
   "images" : [
     {
+      "filename" : "SwiftUI-within-UIKit.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
