@@ -41,6 +41,7 @@ class LoginViewController: UIViewController {
                 textField: passwordTF
             )
         }
+        performSegue(withIdentifier: "showWelcomeVC", sender: nil)
     }
     
     @IBAction func forgotRegisterData(_ sender: UIButton) {
@@ -52,6 +53,16 @@ class LoginViewController: UIViewController {
     @IBAction func unwindSegue(_ sender: UIStoryboardSegue) {
         userNameTF.text = ""
         passwordTF.text = ""
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if textField == userNameTF {
+            passwordTF.becomeFirstResponder()
+        } else {
+            logInPressed()
+            performSegue(withIdentifier: "showWelcomeVC", sender: nil)
+        }
+        return true
     }
     
 }
