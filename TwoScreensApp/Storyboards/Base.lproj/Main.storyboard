@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -88,8 +88,7 @@
                     <connections>
                         <outlet property="passwordTF" destination="rkw-un-ysB" id="2Xn-Fz-aZt"/>
                         <outlet property="userNameTF" destination="7Ok-Ql-Oyh" id="Xac-NQ-k1N"/>
-                        <segue destination="TYn-FR-Hmy" kind="presentation" identifier="showWelcomeVC" id="ZsL-M8-bg5"/>
-                        <segue destination="TYn-FR-Hmy" kind="presentation" identifier="showWelcomeVC" modalPresentationStyle="fullScreen" id="dwp-TT-b9H"/>
+                        <segue destination="TYn-FR-Hmy" kind="presentation" identifier="showWelcomeVC" modalPresentationStyle="fullScreen" id="ZsL-M8-bg5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -251,9 +250,6 @@
             <point key="canvasLocation" x="3129.375" y="82.394366197183103"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="dwp-TT-b9H"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <image name="person" catalog="system" width="128" height="117"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
