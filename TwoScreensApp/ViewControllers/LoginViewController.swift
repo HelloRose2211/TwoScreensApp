@@ -54,17 +54,6 @@ class LoginViewController: UIViewController {
         userNameTF.text = ""
         passwordTF.text = ""
     }
-    
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        if textField == userNameTF {
-            passwordTF.becomeFirstResponder()
-        } else {
-            logInPressed()
-            performSegue(withIdentifier: "showWelcomeVC", sender: nil)
-        }
-        return true
-    }
-    
 }
 
 //MARK: Private methode
